@@ -51,6 +51,10 @@ TARGET_PREBUILT_KERNEL := device/xiaomi/vince/prebuilt/kernel
 TARGET_BOARD_PLATFORM := msm8953
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno506
 
+# Hack: prevent anti rollback
+PLATFORM_SECURITY_PATCH := 2099-12-31
+PLATFORM_VERSION := 16.1.0
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := vince
 
