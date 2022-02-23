@@ -138,3 +138,4 @@ TW_DEVICE_VERSION := 1
 PB_TORCH_PATH := /sys/class/leds/led:torch_0
 PB_DISABLE_DEFAULT_DM_VERITY := true
 TARGET_OTA_ASSERT_DEVICE := vince
+MAINTAINER := "Rahul K (rk134)"
