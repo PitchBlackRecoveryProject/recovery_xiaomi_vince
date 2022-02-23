@@ -1,0 +1,17 @@
+kind: pipeline
+name: PBRP-RK134-TESTING
+
+steps:
+- name: cooked
+  image: anggit86/dev:latest
+  environment: 
+    CHANNEL_ID:
+      from_secret: CHANNEL_ID
+    BOT_API_KEY:
+      from_secret: BOT_API_KEY
+    rcloneconfig:
+      from_secret: rcloneconfig
+
+  commands:
+    - wget https://raw.githubusercontent.com/rk134/rk134-s_scripts/main/recovery.sh
+    - bash recovery.sh
